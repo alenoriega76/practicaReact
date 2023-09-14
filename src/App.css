@@ -1,0 +1,157 @@
+/* Estilos para cada tarjeta de producto */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Alineación entre tarjetas */
+  margin: -10px; /* Margen negativo para contrarrestar el margen de las tarjetas */
+  background-color: #888;
+}
+.product-card { 
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #4ad8ae;
+  background-color: #fff;
+  margin: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  max-width: 270px;
+  height:auto;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: wrap;
+}
+
+.product-details {
+  flex-grow: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+.product-title {
+  font-size: 18px;
+  margin: 0;
+}
+
+.product-description {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 26px;
+  margin: 10px 0;
+}
+
+.add-to-cart {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #0056b3;
+}
+
+.carrito-message {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+h1{
+  text-align: center;
+}
+/* Estilos para el formulario de búsqueda */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #8b8383;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Estilo para el botón de búsqueda */
+button[type="submit"] {
+  background-color: #007bff;
+}
+
+/* Estilo para el botón de restablecer */
+button[type="reset"] {
+  background-color: #ccc;
+}
+
+/* Estilo para los elementos en línea */
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
